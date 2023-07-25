@@ -8,6 +8,14 @@
 
 /* commons */
 
+:root {
+    --fl-primary: #1abc9c;
+    --fl-dark: #2c3e50;
+    --fl-dark-soft: #3a546d;
+    --fl-white: #FFFFFF;
+    --fl-black: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -15,9 +23,28 @@ h4 {
     text-transform: uppercase;
 }
 
+.card {
+    background-color: transparent;
+    border: 0;
+}
+
+/* utilities */
+
+.ms-bg-primary {
+    background-color: var(--fl-primary);
+}
+
+.ms-bg-dark-soft {
+    background-color: var(--fl-dark-soft);
+}
+
+.ms-bg-dark {
+    background-color: var(--fl-dark);
+}
+
 @media screen and (min-width: 768px) {
 
     .container-md {
-        width: 80%;
+        width: 85%;
     }
 }
