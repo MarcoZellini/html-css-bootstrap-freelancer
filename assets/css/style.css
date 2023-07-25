@@ -19,13 +19,56 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     text-transform: uppercase;
 }
 
 .card {
     background-color: transparent;
     border: 0;
+}
+
+.ms-divider-light,
+.ms-divider-dark {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.ms-divider-light .line,
+.ms-divider-dark .line {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.ms-divider-light .line {
+    border: 2px solid var(--fl-white);
+}
+
+.ms-divider-light .fa-star {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    background-color: var(--fl-primary);
+    width: 50px;
+    transform: translate(-50%, 0);
+    color: var(--fl-white);
+}
+
+.ms-divider-dark .line {
+    border: 2px solid var(--fl-dark);
+}
+
+.ms-divider-dark .fa-star {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    background-color: var(--fl-white);
+    width: 50px;
+    transform: translate(-50%, 0);
+    color: var(--fl-dark);
 }
 
 /* utilities */
@@ -42,6 +85,13 @@ h4 {
     background-color: var(--fl-dark);
 }
 
+/* main */
+
+#site_main .card {
+    border-radius: 2rem;
+}
+
+
 
 /* footer */
 
@@ -55,6 +105,22 @@ h4 {
     align-items: center;
 }
 
+#site_footer .top p > a {
+    color: var(--fl-primary);
+}
+
+
+/* @media screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: .5rem;
+    }
+} */
+
 
 
 @media screen and (min-width: 768px) {
@@ -63,3 +129,4 @@ h4 {
         width: 85%;
     }
 }
+
