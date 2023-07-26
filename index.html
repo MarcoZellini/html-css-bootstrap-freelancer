@@ -17,7 +17,37 @@
     </head>
     <body class="">
 
-        <header id="site_header"> SALTARE </header>
+        <header id="site_header">
+            <nav class="navbar navbar-expand-md navbar-dark ms-bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">START BOOTSTRAP</a>
+                    <!-- /.navbar-brand -->
+
+                    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item">
+                                <a href="#portfolio" class="nav-link active">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact_me" class="nav-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- /.navbar -->
+        </header>
         <!-- /#site_header -->
 
         <main id="site_main">
@@ -26,7 +56,7 @@
                 <div class="container text-center p-4">
 
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-6 col-xl-5 d-flex flex-column align-items-center">
+                        <div class="col-12 col-md-7 col-xl-5 d-flex flex-column align-items-center">
                             <img class="img-fluid" src="./assets/img/avatar.svg" alt>
 
                             <h1 class="py-3">Start bootstrap</h1>
@@ -43,7 +73,7 @@
             </section>
             <!-- /.jumbotron -->
 
-            <section class="portfolio py-4 py-md-5">
+            <section id="portfolio" class="portfolio py-4 py-md-5">
                 <div class="container-md text-center py-4">
                     <h3>portfolio</h3>
                     <div class="ms-divider-dark py-2">
@@ -100,7 +130,7 @@
             </section>
             <!-- /.portfolio -->
 
-            <section class="about ms-bg-primary text-white py-4 py-md-5">
+            <section id="about" class="about ms-bg-primary text-white py-4 py-md-5">
                 <div class="container-md text-center">
                     <h3>about</h3>
                     <div class="ms-divider-light py-2">
@@ -145,7 +175,7 @@
             </section>
             <!-- /.about -->
 
-            <section class="contact_me">
+            <section id="contact_me" class="contact_me">
                 SALTARE
             </section>
             <!-- /.contact_me -->
