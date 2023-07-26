@@ -91,7 +91,9 @@ h6 {
     border-radius: 2rem;
 }
 
-
+#site_main #floatingTextarea2 {
+    height: 150px;
+}
 
 /* footer */
 
@@ -108,20 +110,6 @@ h6 {
 #site_footer .top p > a {
     color: var(--fl-primary);
 }
-
-
-/* @media screen and (max-width: 767px) {
-
-    h1 {
-        font-size: 1rem;
-    }
-
-    h6 {
-        font-size: .5rem;
-    }
-} */
-
-
 
 @media screen and (min-width: 768px) {
 
